@@ -1,30 +1,35 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="https://Raghav2128.github.io/cse445_a4">
-<xsd:element name="NationalParks">
-<xsd:complexType>
-<xsd:sequence>
-<xsd:element name="NationalPark" maxOccurs="unbounded">
-<xsd:complexType>
-<xsd:sequence>
-<xsd:element name="Name" type="xsd:string"/>
-<xsd:element name="Phone" type="xsd:string" maxOccurs="unbounded"/>
-<xsd:element name="Address">
-<xsd:complexType>
-<xsd:sequence>
-<xsd:element name="Number" type="xsd:int"/>
-<xsd:element name="Street" type="xsd:string"/>
-<xsd:element name="City" type="xsd:string"/>
-<xsd:element name="State" type="xsd:string"/>
-<xsd:element name="Zip" type="xsd:int"/>
-</xsd:sequence>
-<xsd:attribute name="NearestAirport" type="xsd:string" use="required"/>
-</xsd:complexType>
-</xsd:element>
-</xsd:sequence>
-<xsd:attribute name="Rating" type="xsd:decimal" use="optional"/>
-</xsd:complexType>
-</xsd:element>
-</xsd:sequence>
-</xsd:complexType>
-</xsd:element>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+            targetNamespace="https://Raghav2128.github.io/cse445_a4"
+            xmlns="https://Raghav2128.github.io/cse445_a4"
+            elementFormDefault="qualified">
+
+  <xsd:element name="NationalParks">
+    <xsd:complexType>
+      <xsd:sequence>
+        <xsd:element name="NationalPark" maxOccurs="unbounded">
+          <xsd:complexType>
+            <xsd:sequence>
+              <xsd:element name="Name" type="xsd:string"/>
+              <xsd:element name="Phone" type="xsd:string" maxOccurs="unbounded"/>
+              <xsd:element name="Address">
+                <xsd:complexType>
+                  <xsd:sequence>
+                    <xsd:element name="Number" type="xsd:int"/>
+                    <xsd:element name="Street" type="xsd:string"/>
+                    <xsd:element name="City" type="xsd:string"/>
+                    <xsd:element name="State" type="xsd:string"/>
+                    <xsd:element name="Zip" type="xsd:int"/>
+                  </xsd:sequence>
+                  <xsd:attribute name="NearestAirport" type="xsd:string" use="required"/>
+                </xsd:complexType>
+              </xsd:element>
+            </xsd:sequence>
+            <xsd:attribute name="Rating" type="xsd:decimal" use="optional"/>
+          </xsd:complexType>
+        </xsd:element>
+      </xsd:sequence>
+    </xsd:complexType>
+  </xsd:element>
+
 </xsd:schema>
