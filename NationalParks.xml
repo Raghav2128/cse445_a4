@@ -17,6 +17,8 @@
   <NationalPark Rating="4.8">
     <Name>Arches</Name>
     <Phone>435-719-2299</Phone>
+    <Phone>877-444-6777</Phone>
+    <Phone>435-719-2100</Phone>
     <Address NearestAirport="Canyonlands Field">
       <Number>907</Number>
       <Street>PO Box</Street>
@@ -29,6 +31,8 @@
   <NationalPark Rating="4.8">
     <Name>Canyonlands</Name>
     <Phone>435-719-2313</Phone>
+    <Phone>435-719-2100</Phone>
+    <Phone>435-259-4712</Phone>
     <Address NearestAirport="Canyonlands Field">
       <Number>2282</Number>
       <Street>Resource Blvd</Street>
